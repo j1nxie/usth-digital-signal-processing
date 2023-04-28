@@ -66,6 +66,7 @@ def array_sum():
     print("- Sum of each column:", np.sum(x, axis=0))
     print("- Sum of each row:", np.sum(x, axis=1))
 
+
 def array_manipulation():
     x = np.array([[1, 2], [3, 4]])
 
