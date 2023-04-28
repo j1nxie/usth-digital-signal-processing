@@ -1,17 +1,21 @@
 import sys
 from numpy_tutorial import numpy_tutorial
+from signals import signals_init
 
 
 def main():
     while True:
         print("1 - numpy tutorial")
-        print("2 - exit")
+        print("2 - signals")
+        print("3 - exit")
 
         choice = int(input("choice: "))
         match choice:
             case 1:
                 numpy_tutorial()
             case 2:
+                signals_init()
+            case 3:
                 break
             case _:
                 print("invalid choice!")
