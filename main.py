@@ -1,5 +1,5 @@
 import sys
-from numpy_tutorial import array_init
+from numpy_tutorial import numpy_tutorial
 
 
 def main():
@@ -10,7 +10,7 @@ def main():
         choice = int(input("choice: "))
         match choice:
             case 1:
-                array_init()
+                numpy_tutorial()
             case 2:
                 break
             case _:
