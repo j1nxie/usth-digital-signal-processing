@@ -5,13 +5,16 @@ from .datatypes import datatypes_init
 def numpy_tutorial():
     while True:
         print("1 - arrays")
-        print("2 - back")
+        print("2 - datatypes")
+        print("3 - back")
 
         choice = int(input("choice: "))
         match choice:
             case 1:
                 array_init()
             case 2:
+                datatypes_init()
+            case 3:
                 break
             case _:
                 print("invalid choice!")
