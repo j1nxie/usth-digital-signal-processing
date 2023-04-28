@@ -1,6 +1,7 @@
 from .arrays import array_creation, array_overview, array_init
 from .datatypes import datatypes_init
 
+
 def numpy_tutorial():
     while True:
         print("1 - arrays")
@@ -15,4 +16,11 @@ def numpy_tutorial():
             case _:
                 print("invalid choice!")
 
-__all__ = ["array_creation", "array_overview", "array_init", "datatypes_init", "numpy_tutorial"]
+
+__all__ = [
+    "array_creation",
+    "array_overview",
+    "array_init",
+    "datatypes_init",
+    "numpy_tutorial",
+]
