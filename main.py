@@ -1,9 +1,11 @@
 import sys
+from helpers.clrscr import clrscr
 from numpy_tutorial import numpy_tutorial
 from signals import signals_init
 
 
 def main():
+    clrscr()
     while True:
         print("1 - numpy tutorial")
         print("2 - signals")

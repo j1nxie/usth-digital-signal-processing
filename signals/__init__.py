@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
+
+from helpers.clrscr import clrscr
 from .signals_plot import plot_time, plot_frequency, plot_inverse
 
 
 def signals_init():
+    clrscr()
     while True:
         print("1 - plot input over time")
         print("2 - plot input over frequency")
