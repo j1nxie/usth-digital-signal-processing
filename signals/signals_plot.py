@@ -6,32 +6,37 @@ from constants import INPUT_1kHz_15kHz
 
 
 def plot_time():
-    plt.plot(INPUT_1kHz_15kHz)
+    plt.stem(INPUT_1kHz_15kHz, markerfmt=" ")
 
 
 def plot_frequency():
-    plt.subplot(5, 1, 1)
     frequency = fft.fft(INPUT_1kHz_15kHz)
-    plt.plot(frequency)
+    plt.stem(frequency, markerfmt=" ")
+    plt.title("Signal in frequency domain", fontsize=10)
+    plt.show()
 
-    plt.subplot(5, 1, 2)
+    plt.subplot(2, 2, 1)
     real = np.real(frequency)
-    plt.plot(real)
+    plt.xlabel("Real part", fontsize=10)
+    plt.stem(real, markerfmt=" ")
 
-    plt.subplot(5, 1, 3)
+    plt.subplot(2, 2, 2)
     imag = np.imag(frequency)
-    plt.plot(imag)
+    plt.xlabel("Imaginary part", fontsize=10)
+    plt.stem(imag, markerfmt=" ")
 
-    plt.subplot(5, 1, 4)
+    plt.subplot(2, 2, 3)
     magnitude = np.abs(frequency)
-    plt.plot(magnitude)
+    plt.xlabel("Magnitude", fontsize=10)
+    plt.stem(magnitude, markerfmt=" ")
 
-    plt.subplot(5, 1, 5)
+    plt.subplot(2, 2, 4)
     phase = np.angle(frequency)
-    plt.plot(phase)
+    plt.xlabel("Phase", fontsize=10)
+    plt.stem(phase, markerfmt=" ")
 
 
 def plot_inverse():
     frequency = fft.fft(INPUT_1kHz_15kHz)
     inverse = fft.ifft(frequency)
-    plt.plot(inverse)
+    plt.stem(inverse, markerfmt=" ")
