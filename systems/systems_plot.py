@@ -21,26 +21,27 @@ def plot_frequency():
 def plot_freq_real_imag():
     frequency = fft.fft(IMPULSE_RESPONSE)
 
+    plt.subplot(2, 2, 1)
     real = np.real(frequency)
-    plt.xlabel("Impulse response - Real part", fontsize=10)
+    plt.xlabel("Real part", fontsize=10)
     plt.stem(real, markerfmt=" ")
-    plt.show()
 
+    plt.subplot(2, 2, 2)
     imag = np.imag(frequency)
-    plt.xlabel("Impulse response - Imaginary part", fontsize=10)
+    plt.xlabel("Imaginary part", fontsize=10)
     plt.stem(imag, markerfmt=" ")
-    plt.show()
 
+    plt.subplot(2, 2, 3)
     magnitude = np.abs(frequency)
-    plt.xlabel("Impulse response - Magnitude", fontsize=10)
+    plt.xlabel("Magnitude", fontsize=10)
     plt.stem(magnitude, markerfmt=" ")
-    plt.show()
 
+    plt.subplot(2, 2, 4)
     phase = np.angle(frequency)
-    plt.xlabel("Impulse response - Phase", fontsize=10)
+    plt.xlabel("Phase", fontsize=10)
     plt.stem(phase, markerfmt=" ")
-    plt.show()
 
+    plt.show()
 
 def plot_inverse():
     frequency = fft.fft(IMPULSE_RESPONSE)
@@ -76,18 +77,24 @@ def plot_output_conversions():
     plt.stem(output_freq, markerfmt=" ")
     plt.show()
 
+    plt.subplot(2, 2, 1)
     output_real = np.real(output_freq)
     plt.stem(output_real, markerfmt=" ")
-    plt.show()
+    plt.xlabel("Real part", fontsize=10)
 
+    plt.subplot(2, 2, 2)
     output_imag = np.imag(output_freq)
     plt.stem(output_imag, markerfmt=" ")
-    plt.show()
+    plt.xlabel("Imaginary part", fontsize=10)
 
+    plt.subplot(2, 2, 3)
     output_magnitude = np.abs(output_freq)
     plt.stem(output_magnitude, markerfmt=" ")
-    plt.show()
+    plt.xlabel("Magnitude", fontsize=10)
 
+    plt.subplot(2, 2, 4)
     output_phase = np.angle(output_freq)
     plt.stem(output_phase, markerfmt=" ")
+    plt.xlabel("Phase", fontsize=10)
+
     plt.show()
