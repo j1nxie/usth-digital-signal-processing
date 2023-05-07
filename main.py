@@ -1,7 +1,9 @@
 import sys
+from filtering import filtering_init
 from helpers.clrscr import clrscr
 from numpy_tutorial import numpy_tutorial
 from signals import signals_init
+from systems import systems_init
 
 
 def main():
@@ -9,7 +11,9 @@ def main():
     while True:
         print("1 - numpy tutorial")
         print("2 - signals")
-        print("3 - exit")
+        print("3 - systems")
+        print("4 - filtering")
+        print("5 - exit")
 
         choice = int(input("choice: "))
         match choice:
@@ -18,6 +22,10 @@ def main():
             case 2:
                 signals_init()
             case 3:
+                systems_init()
+            case 4:
+                filtering_init()
+            case 5:
                 break
             case _:
                 print("invalid choice!")
