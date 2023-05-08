@@ -43,6 +43,7 @@ def plot_freq_real_imag():
 
     plt.show()
 
+
 def plot_inverse():
     frequency = fft.fft(IMPULSE_RESPONSE)
     inverse = fft.ifft(frequency)
