@@ -5,6 +5,7 @@ import numpy as np
 
 from constants import INPUT_1kHz_15kHz
 
+
 def chebyshev():
     b, a = sgl.cheby1(10, 1, 15, "hp", fs=len(INPUT_1kHz_15kHz))
     w, h = sgl.freqs(b, a)

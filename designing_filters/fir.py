@@ -5,6 +5,7 @@ import numpy as np
 
 from constants import INPUT_1kHz_15kHz
 
+
 # TODO: rename variables
 def bartlett():
     window = sgl.windows.bartlett(51)
@@ -33,7 +34,6 @@ def bartlett():
     freq_input = np.abs(fft.fft(INPUT_1kHz_15kHz))
     plt.subplot(2, 2, 2)
     plt.plot(freq_input)
-    plt.axis([-0.5, 0.5, 0, 120])
     plt.xlabel("Input in frequency domain")
 
     plt.subplot(2, 2, 3)
