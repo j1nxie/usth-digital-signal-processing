@@ -23,4 +23,4 @@ def designing_filters_init():
                 print("invalid choice!")
 
 
-__all__ = ["bartlett"]
+__all__ = ["bartlett", "chebyshev"]
