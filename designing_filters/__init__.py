@@ -15,13 +15,10 @@ def designing_filters_init():
 
         match choice:
             case 1:
-                bartlett()
+                fir()
             case 2:
-                chebyshev()
+                iir()
             case 3:
                 break
             case _:
                 print("invalid choice!")
-
-
-__all__ = ["bartlett", "chebyshev"]
