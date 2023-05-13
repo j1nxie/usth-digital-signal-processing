@@ -94,7 +94,7 @@ def bessel():
     w, h = sgl.freqs(b, a)
 
     plt.semilogx(w, 20 * np.log10(abs(h)))
-    plt.xlabel("Frequency representation of Butterworth filter")
+    plt.xlabel("Frequency representation of Bessel filter")
     plt.show()
 
     output = sgl.filtfilt(b, a, INPUT_1kHz_15kHz)
