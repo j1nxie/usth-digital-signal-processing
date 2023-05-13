@@ -27,4 +27,4 @@ def filtering_init():
                 print("invalid choice!")
 
 
-__all__ = ["lowpass"]
+__all__ = ["ecg_lowpass", "plot_ecg_freq", "highpass"]
