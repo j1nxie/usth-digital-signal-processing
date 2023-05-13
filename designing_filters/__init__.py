@@ -1,5 +1,6 @@
 from helpers.clrscr import clrscr
 
+from .audio_processing import audio_processing
 from .fir import fir
 from .highpass_filter import highpass_filter
 from .iir import iir
@@ -11,7 +12,8 @@ def designing_filters_init():
         print("1 - FIR")
         print("2 - IIR")
         print("3 - applying a highpass filter to input")
-        print("4 - exit")
+        print("4 - audio processing")
+        print("5 - exit")
 
         choice = int(input("choice: "))
 
@@ -23,6 +25,8 @@ def designing_filters_init():
             case 3:
                 highpass_filter()
             case 4:
+                audio_processing()
+            case 5:
                 break
             case _:
                 print("invalid choice!")
