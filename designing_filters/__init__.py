@@ -1,6 +1,7 @@
-from .iir import chebyshev
-from .fir import bartlett
 from helpers.clrscr import clrscr
+
+from .fir import fir
+from .iir import iir
 
 
 def designing_filters_init():

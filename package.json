@@ -7,7 +7,7 @@
 		"postinstall": "husky install",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "pipenv run python main.py",
-		"lint": "pipenv run black . && pipenv run ruff . --fix --show-fixes"
+		"lint": "pipenv run isort . && pipenv run black . && pipenv run ruff . --fix --show-fixes"
 	},
 	"config": {
 		"commitizen": {

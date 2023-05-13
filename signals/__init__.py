@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 
 from helpers.clrscr import clrscr
-from .signals_plot import plot_time, plot_frequency, plot_inverse
+
+from .signals_plot import plot_frequency, plot_inverse, plot_time
 
 
 def signals_init():

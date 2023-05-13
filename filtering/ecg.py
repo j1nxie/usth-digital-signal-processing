@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-import scipy.signal as sgl
 import scipy.fftpack as fft
+import scipy.signal as sgl
 
 from constants import ECG
 

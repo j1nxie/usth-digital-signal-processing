@@ -1,11 +1,12 @@
 from helpers.clrscr import clrscr
+
 from .systems_plot import (
-    plot_freq_real_imag,
     plot_convolution,
-    plot_output_conversions,
-    plot_time,
+    plot_freq_real_imag,
     plot_frequency,
     plot_inverse,
+    plot_output_conversions,
+    plot_time,
 )
 
 

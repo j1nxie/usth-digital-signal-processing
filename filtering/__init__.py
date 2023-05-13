@@ -1,6 +1,7 @@
+from helpers import clrscr
+
 from .ecg import ecg_lowpass, plot_ecg_freq
 from .highpass import highpass
-from helpers import clrscr
 
 
 def filtering_init():

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
+import numpy as np
 import scipy.fftpack as fft
 import scipy.signal as sgl
-import numpy as np
 
 from constants import INPUT_1kHz_15kHz
 

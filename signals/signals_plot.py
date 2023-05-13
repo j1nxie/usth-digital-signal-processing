@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-import scipy.fftpack as fft
 import numpy as np
+import scipy.fftpack as fft
 
 from constants import INPUT_1kHz_15kHz
 

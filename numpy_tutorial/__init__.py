@@ -1,6 +1,6 @@
-from .arrays import array_creation, array_overview, array_init
+from .array_math import array_dot_product, array_math_init, array_math_overview
+from .arrays import array_creation, array_init, array_overview
 from .datatypes import datatypes_init
-from .array_math import array_dot_product, array_math_overview, array_math_init
 
 
 def numpy_tutorial():
