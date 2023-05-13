@@ -1,4 +1,5 @@
 import sys
+
 from designing_filters import designing_filters_init
 from filtering import filtering_init
 from helpers.clrscr import clrscr
